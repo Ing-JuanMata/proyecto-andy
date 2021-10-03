@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/latest/normalize.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/141805e0a0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
+    <title>Galeria</title>
+  </head>
+  <body>
+    <header class="header_index">
+      <div class="img-marca">
+        <a href="./index.html"
+          ><img
+            src="https://drive.google.com/uc?id=19KsDHLLbojasmhQycybq_w0wBBlkfgHT"
+            alt="Logo empresa"
+          />
+        </a>
+      </div>
+      <nav>
+        <a id="inicio_pagina_menu" href="./menu.html">MENU</a>
+        <a id="inicio_pagina_galeria" href="./galeria.html">GALERIA</a>
+        <a id="inicio_pagina_comunidad" href="./comunidad.html">COMUNIDAD</a>
+        <a id="inicio_pagina_promociones" href="./promociones.html"
+          >PROMOCIONES</a
+        >
+        <a id="inicio_pagina_domicilio" href="./domicilio.html">DOMICILIO</a>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://www.whatsapp.com" target="_blank"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+      </nav>
+    </header>
+
+    <div id="image-slider" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img
+              src="https://drive.google.com/uc?id=16szroRqrQfzob-dP6aVD4oyeBsliwUxl"
+              alt="lemmon pepper"
+            />
+          </li>
+          <li class="splide__slide">
+            <img
+              src="https://drive.google.com/uc?id=1JlpabpLqC2lbdCvAyE1hGEzj5Gj_huiy"
+              alt="Buffalo"
+            />
+          </li>
+          <li class="splide__slide">
+            <img
+              src="https://drive.google.com/uc?id=1hW3qPmHw5fV_Yf9HOqfviE6929HpaqqP"
+              alt="frutos rojos parmesano"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer><p>Todos los derechos reservados</p></footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide("#image-slider", {
+          cover: true,
+          height: 500,
+        }).mount();
+      });
+    </script>
+  </body>
+</html>
