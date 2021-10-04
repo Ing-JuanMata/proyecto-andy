@@ -52,7 +52,7 @@ nav {
 }
 /* ESTILOS PARA EL INDEX */
 
-.banner-principal{
+.banner-principal {
   text-align: center;
 }
 
@@ -98,7 +98,12 @@ nav {
 }
 
 /* ESTILOS PARA LA GALERIA */
-.splide__slide img {
-	width : 100%;
-	height: auto;
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.row {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
 }
